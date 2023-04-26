@@ -1,0 +1,34 @@
+#hoja {
+    border: solid 1px grey;
+    padding: 5px;
+    margin: 0 auto;
+    width:80%;
+    background: #82baf9;
+
+}
+
+#titulo {
+    margin: 10px;
+    display: flex;
+    padding:30px;
+}
+
+fieldset {
+    margin-bottom: 10px;
+
+}
+
+legend {
+    border: solid 1px #b5d5f8;
+    padding: 5px;
+    font-weight: bold;
+    background: #b5d5f8;
+    border-radius: 15px;
+}
+
+#mifoto {
+    border: solid 2px;
+    margin: 10px;
+    border-radius: 50px;
+}
+

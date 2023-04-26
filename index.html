@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <title>Presentación</title>
-    <link rel="stylesheet" href="./assets/img" />
+    <link rel="stylesheet" href="./assets" />
   </head>
   <body>
     <div>
       <h1>Presentación Francisco Gómez Sandoval</h1>
-      <img src="./assets/img/mifoto.jpeg" widht="50" height="50" />
-      <h3>¿Quién Soy?</h3>
+      <img
+        src="./assets/img/mifoto.jpeg"
+        id="mifoto"
+        widht="100"
+        height="100"
+      />
+      <a href="index-css.html" target="_blank" rel="noopener"
+        >Presentacion con CSS</a
+      >
+      <h2>¿Quién Soy?</h2>
       <p>
         Desarrollador Fullstack en Java y javascript con 2 años de experiencia,
         soy chileno y actualmente me encuentro viviendo en Colombia. Estoy en
@@ -22,6 +29,9 @@
         una persona proactiva, organizada, disfruto de trabajar en equipo,
         alcanzar nuevos objetivos y especialista en solución de problemas.
       </p>
+    </div>
+
+    <div>
       <h4>Mis comidas Favoritas</h4>
       <ul>
         <li>Comida Española</li>
@@ -30,77 +40,96 @@
         <li>Pescados y mariscos</li>
       </ul>
       <h4>Mi musica Favorita</h4>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/v2AC41dglnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <h4>Algunas redes sociales </h4>
-      <a href="https://www.linkedin.com/in/francisco-jose-gomez-sandoval-b5583b16/">Linkedin</a> 
-      <a href="https://github.com/Pakogomez79">Github</a> 
-    <br />
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/v2AC41dglnM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <h4>Algunas redes sociales</h4>
+      <a
+        href="https://www.linkedin.com/in/francisco-jose-gomez-sandoval-b5583b16/"
+        >Linkedin</a
+      >
+      <a href="https://github.com/Pakogomez79">Github</a>
+      <br />
+    </div>
+
     <div>
-      <h3>Contactenos</h3>
-      <form action="" method="">
-        <ul>
-          <li>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="nombre_usuario" />
-          </li>
-          <li>
-            <label for="mail">Correo electrónico:</label>
-            <input type="email" id="mail" name="mail" />
-          </li>
-          <li>
+      <h2>Contactenos</h2>
+
+      <fieldset>
+        <legend>formulario 1</legend>
+        <form action="" method="">
+          <ul>
+            <li>
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="nombre_usuario" />
+            </li>
+            <li>
+              <label for="mail">Correo electrónico:</label>
+              <input type="email" id="mail" name="mail" />
+            </li>
+            <li>
+              <label for="msg">Mensaje:</label>
+              <textarea id="msg" name="mensaje"></textarea>
+            </li>
+            <p>
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Borrar" />
+            </p>
+          </ul>
+        </form>
+      </fieldset>
+
+      <fieldset>
+        <legend>formulario 2</legend>
+        <form action="" method="">
+          <p>Nombre: <input type="text" name="nombre" /></p>
+          <p>
+            Año de nacimiento: <input type="number" name="nacido" min="1900" />
+          </p>
+          <p>Fecha: <input type="date" name="fecha" /></p>
+          <p>
             <label for="msg">Mensaje:</label>
             <textarea id="msg" name="mensaje"></textarea>
-          </li>
+          </p>
           <p>
             <input type="submit" value="Enviar" />
             <input type="reset" value="Borrar" />
           </p>
-        </ul>
-      </form>
+        </form>
+      </fieldset>
 
-      <br />
+      <fieldset>
+        <legend>formulario 3</legend>
+        <form action="">
+          <p>Nombre: <input type="text" name="nombre" required /></p>
+          <p>Sexo:</p>
 
-      <form action="" method="">
-        <p>Nombre: <input type="text" name="nombre" /></p>
-        <p>
-          Año de nacimiento: <input type="number" name="nacido" min="1900" />
-        </p>
-        <p>Fecha: <input type="date" name="fecha" /></p>
-        <p>
-          <label for="msg">Mensaje:</label>
-          <textarea id="msg" name="mensaje"></textarea>
-        </p>
-        <p>
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Borrar" />
-        </p>
-      </form>
-
-      <br />
-
-      <form action="">
-        <p>Nombre: <input type="text" name="nombre" required /></p>
-        <p>Sexo:</p>
-
-        <p>
-          <input type="radio" name="boton" value="1" />Hombre<br />
-          <input type="radio" name="boton" value="2" />Mujer<br />
-          <input type="radio" name="boton" value="0" checked />Sin respuesta
-        </p>
-        <p>
-          Indique su nivel de satisfaccion (de 0 totalmente insatisfecho a 5 muy
-          satisfecho):
-          <input type="range" name="rango" min="0" max="1" step="0.2" />
-        </p>
-        <p>
-          <label for="msg">Mensaje:</label>
-          <textarea id="msg" name="mensaje"></textarea>
-        </p>
-        <p>
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Borrar" />
-        </p>
-      </form>
+          <p>
+            <input type="radio" name="boton" value="1" />Hombre<br />
+            <input type="radio" name="boton" value="2" />Mujer<br />
+            <input type="radio" name="boton" value="0" checked />Sin respuesta
+          </p>
+          <p>
+            Indique su nivel de satisfaccion (de 0 totalmente insatisfecho a 5
+            muy satisfecho):
+            <input type="range" name="rango" min="0" max="1" step="0.2" />
+          </p>
+          <p>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="mensaje"></textarea>
+          </p>
+          <p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+          </p>
+        </form>
+      </fieldset>
     </div>
   </body>
 </html>
